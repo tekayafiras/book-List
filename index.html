@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-List</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="ui">
+            <div class="title">
+                <i class="fas fa-book-open fa-2x"></i>
+                <h1>My<span>Book</span>List</h1>
+            </div>
+            <form action="">
+                <label for="">Title</label>
+                <input type="text">
+                <label for="">Author</label>
+                <input type="text">
+                <label for="">ISBN</label>
+                <input type="text">
+                <input type="submit" class="submit" value="Submit">
+            </form>        
+        </div>
+        <div class="database">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="title-item">
+                        <h4>Title</h4>
+                    </div>
+                    <div class="grid-main book-title">
+                        <p>book one</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="title-item">
+                        <h4>Author</h4>
+                    </div>
+                    <div class="grid-main author">
+                        <p>john doe</p>
+                    </div>
+                </div>
+                <div class="grid-item ">
+                    <div class="title-item">
+                        <h4>ISBN</h4>
+                    </div>
+                    <div class="grid-main isbn">
+                        <p>48562452512</p>
+                        <i class="fas fa-times delete"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

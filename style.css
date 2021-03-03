@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue:  #3b7ca5 ;
+    --green : #257236;
+}
+body{
+    max-width: 500px;
+    margin: 2rem auto;
+    color: rgb(70, 65, 65);
+    font-family: sans-serif
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title h1{
+    font-size: 2.4rem;
+    padding: 0 .5rem;
+}
+.title i , .title span{
+    color: var(--blue);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+label, input{
+    padding: .2rem 0;
+    margin: .2rem 0;
+}
+.submit{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    background: var(--blue);
+    color: white;
+    border: none;
+    padding: .4rem 0;
+}
+.submit:hover{
+    opacity: .85;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+.title-item{
+    padding: .7rem 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.grid-main{
+    cursor: pointer;
+    padding: .75rem .1rem;
+    transition: all .3s ease-in;
+}
+.isbn{
+    display: flex;
+    justify-content: space-between;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+.delete{
+    background: rgb(212, 25, 25);
+    padding: .25rem;
+    border-radius: 3px;
+    font-size: 10px;
+    color: white;
+    transition: all .3s ease-in;
+}
+.delete:hover{
+    opacity: .7;
+}
